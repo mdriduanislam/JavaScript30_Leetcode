@@ -8,5 +8,6 @@ var join = function(arr1, arr2) {
        });
     }
   let result = [...merged.values()];
+  result.sort((a, b) => a.id - b.id);
   return result;
 };
